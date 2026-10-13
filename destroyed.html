@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FORM DESTROYED — Forms in Relation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="story-page" data-theme="destroyed">
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav-left">
+      <a class="site-title" href="index.html">THERE IS NO FINAL FORM</a>
+      <button class="back-button" type="button" onclick="goBack()" aria-label="Go back">←</button>
+    </div>
+
+    <div class="symbol-links">
+      <a href="received.html" title="Form Received">
+        <span class="nav-shape nav-triangle"></span>
+      </a>
+      <a href="destroyed.html" class="active" title="Form Destroyed">
+        <span class="nav-shape nav-square"></span>
+      </a>
+      <a href="given-again.html" title="Form Given Again">
+        <span class="nav-shape nav-circle"></span>
+      </a>
+      <a href="collection.html" title="Collection">
+        <span class="nav-shape nav-hexagon"></span>
+      </a>
+      <a class="info-link" href="about.html" title="About">i</a>
+    </div>
+  </nav>
+
+  <main class="story-shell">
+    <header class="story-header">
+      <span class="story-index">02</span>
+      <h1>FORM DESTROYED</h1>
+      <p>weathering · fracture · erosion · break</p>
+    </header>
+
+    <section class="story-stage" id="storyStage" aria-label="Story images"></section>
+  </main>
+
+  <div class="text-overlay" id="textOverlay" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Close text">×</button>
+    <article class="text-card">
+      <p class="text-kicker" id="overlayKicker">WEATHERING / FRACTURE</p>
+      <h2 id="overlayTitle">A SURFACE AFTER RUPTURE</h2>
+      <p id="overlayBody">Weathering, tearing, cracking, and impact interrupt continuity. The surface remains partly recognizable, but its original wholeness has been broken apart.</p>
+    </article>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

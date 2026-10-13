@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Collection — Forms in Relation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="collection-page">
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav-left">
+      <a class="site-title" href="index.html">THERE IS NO FINAL FORM</a>
+      <button class="back-button" type="button" onclick="goBack()" aria-label="Go back">←</button>
+    </div>
+
+    <div class="symbol-links">
+      <a href="received.html" title="Form Received">
+        <span class="nav-shape nav-triangle"></span>
+      </a>
+      <a href="destroyed.html" title="Form Destroyed">
+        <span class="nav-shape nav-square"></span>
+      </a>
+      <a href="given-again.html" title="Form Given Again">
+        <span class="nav-shape nav-circle"></span>
+      </a>
+      <a href="collection.html" class="active" title="Collection">
+        <span class="nav-shape nav-hexagon"></span>
+      </a>
+      <a class="info-link" href="about.html" title="About">i</a>
+    </div>
+  </nav>
+
+  <main class="collection-shell">
+    <header class="collection-header">
+      <div>
+        <h1>COLLECTION</h1>
+      </div>
+      <div class="collection-filters" aria-label="Collection filters">
+        <button class="filter-button active" type="button" data-filter="all">
+          <span class="filter-shape filter-hexagon" aria-hidden="true"></span>
+          <span>all</span>
+        </button>
+        <button class="filter-button" type="button" data-filter="received">
+          <span class="filter-shape filter-triangle" aria-hidden="true"></span>
+          <span>received</span>
+        </button>
+        <button class="filter-button" type="button" data-filter="destroyed">
+          <span class="filter-shape filter-square" aria-hidden="true"></span>
+          <span>destroyed</span>
+        </button>
+        <button class="filter-button" type="button" data-filter="given">
+          <span class="filter-shape filter-circle" aria-hidden="true"></span>
+          <span>given again</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="collection-grid" id="collectionGrid"></section>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
